@@ -5,18 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoclip - Content Creation Tool</title>
     <style>
-        body { font-family: -apple-system, sans-serif; background: #0a0a0a; color: white; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .container { text-align: center; max-width: 600px; padding: 40px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: white; min-height: 100vh; display: flex; flex-direction: column; }
+        .main { flex: 1; display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
+        .container { text-align: center; max-width: 650px; }
         h1 { font-size: 3em; margin-bottom: 10px; }
-        p { color: #aaa; font-size: 1.2em; line-height: 1.6; }
-        .badge { display: inline-block; background: #00BFFF; color: black; padding: 8px 20px; border-radius: 20px; font-weight: bold; margin-top: 20px; }
+        .tagline { color: #aaa; font-size: 1.2em; line-height: 1.6; margin-bottom: 20px; }
+        .badge { display: inline-block; background: #00BFFF; color: black; padding: 8px 20px; border-radius: 20px; font-weight: bold; margin-bottom: 30px; }
+        .features { text-align: left; max-width: 500px; margin: 0 auto 30px; }
+        .features h2 { font-size: 1.3em; margin-bottom: 15px; color: #00BFFF; }
+        .features ul { list-style: none; padding: 0; }
+        .features li { padding: 8px 0; color: #ccc; font-size: 1em; }
+        .features li::before { content: "✓ "; color: #00BFFF; font-weight: bold; }
+        .contact { color: #888; font-size: 0.95em; margin-top: 20px; }
+        .contact a { color: #00BFFF; text-decoration: none; }
+        footer { padding: 20px; text-align: center; border-top: 1px solid #222; }
+        footer a { color: #00BFFF; text-decoration: none; margin: 0 15px; font-size: 0.95em; }
+        footer a:hover { text-decoration: underline; }
+        footer .copy { color: #555; font-size: 0.85em; margin-top: 10px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Autoclip</h1>
-        <p>A content creation tool that helps creators edit and share short-form clips to TikTok and YouTube Shorts.</p>
-        <span class="badge">Content Creation Tool</span>
+    <div class="main">
+        <div class="container">
+            <h1>Autoclip</h1>
+            <p class="tagline">A content creation tool that helps creators edit and share short-form clips to TikTok and YouTube Shorts.</p>
+            <span class="badge">Content Creation Tool</span>
+            <div class="features">
+                <h2>What Autoclip Does</h2>
+                <ul>
+                    <li>Helps creators clip and edit short-form video content</li>
+                    <li>Adds subtitles and visual enhancements to clips</li>
+                    <li>Publishes clips directly to TikTok and YouTube Shorts</li>
+                    <li>Manages content across multiple social platforms</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <p>Contact: <a href="mailto:ishaac.mizadispo@gmail.com">ishaac.mizadispo@gmail.com</a></p>
+            </div>
+        </div>
     </div>
+    <footer>
+        <div>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p class="copy">&copy; 2026 Autoclip. All rights reserved.</p>
+    </footer>
 </body>
 </html>
